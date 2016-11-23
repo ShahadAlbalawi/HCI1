@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{40216943-5B12-48BF-9C0C-48F6452E40D2}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArabicAlphabet</RootNamespace>
+    <AssemblyName>ArabicAlphabet</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>ArabicAlphabet_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllLetters.xaml.cs">
+      <DependentUpon>AllLetters.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter1.xaml.cs">
+      <DependentUpon>letter1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter10.xaml.cs">
+      <DependentUpon>letter10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter11.xaml.cs">
+      <DependentUpon>letter11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter2.xaml.cs">
+      <DependentUpon>letter2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter3.xaml.cs">
+      <DependentUpon>letter3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter4.xaml.cs">
+      <DependentUpon>letter4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter5.xaml.cs">
+      <DependentUpon>letter5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter6.xaml.cs">
+      <DependentUpon>letter6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter7.xaml.cs">
+      <DependentUpon>letter7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter8.xaml.cs">
+      <DependentUpon>letter8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="letter9.xaml.cs">
+      <DependentUpon>letter9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ArabicAlphabet_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Alif.png" />
+    <Content Include="Assets\Baa.png" />
+    <Content Include="Assets\daal.png" />
+    <Content Include="Assets\Haa.png" />
+    <Content Include="Assets\jiim.png" />
+    <Content Include="Assets\Khaa.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\pause.png" />
+    <Content Include="Assets\play.png" />
+    <Content Include="Assets\AllLetters.png" />
+    <Content Include="Assets\raa.png" />
+    <Content Include="Assets\sound\A-Alphabet-song.m4a" />
+    <Content Include="Assets\sound\alif.wav" />
+    <Content Include="Assets\sound\arnab.wav" />
+    <Content Include="Assets\sound\baa.wav" />
+    <Content Include="Assets\sound\batta.wav" />
+    <Content Include="Assets\sound\bayet.wav" />
+    <Content Include="Assets\sound\click_sound.wav" />
+    <Content Include="Assets\sound\daal.wav" />
+    <Content Include="Assets\sound\darraja.wav" />
+    <Content Include="Assets\sound\defdaa.wav" />
+    <Content Include="Assets\sound\dob.wav" />
+    <Content Include="Assets\sound\dobaba.wav" />
+    <Content Include="Assets\sound\egra.wav" />
+    <Content Include="Assets\sound\far.wav" />
+    <Content Include="Assets\sound\gerd.wav" />
+    <Content Include="Assets\sound\haa.wav" />
+    <Content Include="Assets\sound\hesan.wav" />
+    <Content Include="Assets\sound\homar.wav" />
+    <Content Include="Assets\sound\jamal.wav" />
+    <Content Include="Assets\sound\jaras.wav" />
+    <Content Include="Assets\sound\jazar.wav" />
+    <Content Include="Assets\sound\jiim.wav" />
+    <Content Include="Assets\sound\kemethra.wav" />
+    <Content Include="Assets\sound\ketab.wav" />
+    <Content Include="Assets\sound\Khaa.wav" />
+    <Content Include="Assets\sound\Kharoof.wav" />
+    <Content Include="Assets\sound\letslearn.wav" />
+    <Content Include="Assets\sound\maosz.wav" />
+    <Content Include="Assets\sound\mothalath.wav" />
+    <Content Include="Assets\sound\nahla.wav" />
+    <Content Include="Assets\sound\nakhla.wav" />
+    <Content Include="Assets\sound\odon.wav" />
+    <Content Include="Assets\sound\ostad.wav" />
+    <Content Include="Assets\sound\raa.wav" />
+    <Content Include="Assets\sound\rajol.wav" />
+    <Content Include="Assets\sound\sarokh.wav" />
+    <Content Include="Assets\sound\selectaletter.wav" />
+    <Content Include="Assets\sound\shajarah.wav" />
+    <Content Include="Assets\sound\taa.wav" />
+    <Content Include="Assets\sound\tabeb.wav" />
+    <Content Include="Assets\sound\taj.wav" />
+    <Content Include="Assets\sound\temsah.wav" />
+    <Content Include="Assets\sound\thaa.wav" />
+    <Content Include="Assets\sound\thal.wav" />
+    <Content Include="Assets\sound\thoaban.wav" />
+    <Content Include="Assets\sound\tofah.wav" />
+    <Content Include="Assets\sound\zaay.wav" />
+    <Content Include="Assets\sound\zarafah.wav" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16_altform-unplated.png" />
+    <Content Include="Assets\startpage.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Taa.png" />
+    <Content Include="Assets\Thaa.png" />
+    <Content Include="Assets\thaal.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\zaay.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AllLetters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter10.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter11.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter7.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="letter9.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
